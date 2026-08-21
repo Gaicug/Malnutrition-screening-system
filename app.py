@@ -327,7 +327,7 @@ with input_col:
     predict_button = st.button(
         "🔍 Predict Malnutrition Risk",
         type="primary",
-        use_container_width=True
+        width='stretch'
     )
 
 
@@ -614,7 +614,7 @@ with result_col:
 
             st.dataframe(
                 summary,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True
             )
 
@@ -690,7 +690,7 @@ st.dataframe(
         "F1 Score": "{:.2%}",
         "ROC-AUC": "{:.2%}"
     }),
-    use_container_width=True,
+    width='content',
     hide_index=True
 )
 
